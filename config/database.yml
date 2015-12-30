@@ -28,7 +28,7 @@ development:
   database: solidus-store_development
   pool: 5
   username: jankokott
-  password:
+  password: jankokott
 
 
   # The specified database role being used to connect to postgres.
@@ -68,7 +68,7 @@ test:
   database: solidus-store_test
   pool: 5
   username: jankokott
-  password:
+  password: jankokott
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
