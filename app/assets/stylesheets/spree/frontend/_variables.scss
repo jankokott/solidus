@@ -6,8 +6,8 @@ $c_red:         #e45353 !default;  /* Error red      */
 
 $layout_background_color:   #FFFFFF !default;
 $title_text_color:          #404042 !default;
-$body_text_color:           #FFFFFF !default;
-$link_text_color:           #00ADEE !default;
+$body_text_color:           #000000 !default;
+$link_text_color:           #000000 !default;
 
 $product_background_color:  #FFFFFF !default;
 $product_title_text_color:  #404042 !default;
@@ -22,17 +22,18 @@ $product_link_text_color:   #BBBBBB !default;
 /*--------------------------------------*/
 /* Font families
 /*--------------------------------------*/
-$ff_base:       'Ubuntu', sans-serif !default;
+$ff_nav:        'Verdana', sans-serif;
+$ff_base:       'Courier', monospace !default;
 
 /*--------------------------------------
   | Font sizes
   |--------------------------------------
   |- Navigation
   |                                    */
-      $header_navigation_font_size:           14px !default;
-      $horizontal_navigation_font_size:       16px !default;
-      $main_navigation_header_font_size:      14px !default;
-      $main_navigation_font_size:             12px !default;
+      $header_navigation_font_size:           10px !default;
+      $horizontal_navigation_font_size:       13px !default;
+      $main_navigation_header_font_size:      13px !default;
+      $main_navigation_font_size:             13px !default;
 /*|------------------------------------
   |- Product Listing
   |                                  */
