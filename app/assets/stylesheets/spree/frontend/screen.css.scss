@@ -1052,6 +1052,9 @@ table.order-summary {
     padding-left: 10px;
     width: 758px;
   }
+  figure#logo {
+    display: none;
+  }
   footer#footer {
     width: 748px;
   }
@@ -1076,7 +1079,6 @@ table.order-summary {
       margin: 0
     }
   }
-
   nav#taxonomies {
     text-align: center;
 
@@ -1125,17 +1127,39 @@ table.order-summary {
   }
 
   figure#logo {
-    text-align: center;
+    display: none;
   }
 
   #link-to-login {
     display: block;
     text-align: center;
   }
+  nav #main-nav-bar {
+    font-family: $ff_nav;
+    text-transform: lowercase;
+    border-bottom: $default_border;
+    padding-bottom: 5px;
 
+    li {
+
+      a {
+        font-size: $horizontal_navigation_font_size;
+        padding-bottom: 20px;
+        padding-left: 5px;
+      }
+
+      &:first-child {
+        padding-bottom: 0px;
+
+        a {
+          font-size: 24px;
+          padding-left: 0;
+        }
+      }
+    }
+  }
   #search-bar {
-    display: block;
-    text-align: center;
+    display: none;
 
     select {
       margin-bottom: 10px;
@@ -1199,6 +1223,30 @@ table.order-summary {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
 
+  nav #main-nav-bar {
+    font-family: $ff_nav;
+    text-transform: lowercase;
+    border-bottom: $default_border;
+    padding-bottom: 5px;
+
+    li {
+
+      a {
+        font-size: $horizontal_navigation_font_size;
+        padding-bottom: 20px;
+        padding-left: 5px;
+      }
+
+      &:first-child {
+        padding-bottom: 0px;
+
+        a {
+          font-size: 18px;
+          padding-left: 0;
+        }
+      }
+    }
+  }
   .progress-steps li {
     padding: 0;
     margin: 0;
@@ -1257,7 +1305,7 @@ table.order-summary {
   }
 
   figure#logo {
-    text-align: center;
+    display: none;
   }
 
   #link-to-login {
@@ -1266,8 +1314,7 @@ table.order-summary {
   }
 
   #search-bar {
-    display: block;
-    text-align: center;
+    display: none;
 
     select {
       margin-bottom: 10px;
