@@ -79,7 +79,7 @@ dl {
     padding: 5px;
 
     &.odd {
-      background-color: $table_head_color;
+      background-color: #FFFFFF;
     }
   }
   dt {
@@ -166,39 +166,21 @@ fieldset {
 
 input[type="submit"], input[type="button"],
 input[type= "reset"], button, a.button {
-  background-color: $link_text_color;
+  background-color: $body_text_color;
+  border-color: $body_text_color;
   background-image: none;
   text-shadow: none;
   color: $layout_background_color;
   font-weight: bold;
   font-size: $button_font_size;
-  font-family: $ff_base;
-  border: 1px solid $button_border_color;
+  font-family: $ff_nav;
+  text-transform: uppercase;
   padding: 6px 10px 5px;
   vertical-align:  top;
-
-  -webkit-font-smoothing: antialiased;
-
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
-   -khtml-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
-     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
-       -o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
-          box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
-  -webkit-border-radius: 0px;
-   -khtml-border-radius: 0px;
-     -moz-border-radius: 0px;
-      -ms-border-radius: 0px;
-       -o-border-radius: 0px;
-          border-radius: 0px;
 
   &.large {
     padding: 7px 10px;
     font-size: $button_font_size + 2;
-  }
-
-  &.gray {
-    background-color: lighten($body_text_color, 20);
-    border-color: lighten($body_text_color, 10);
   }
 
   &:hover {
@@ -266,7 +248,7 @@ table {
       }
 
       &.alt, &.odd {
-        background-color: lighten($link_text_color, 50);
+        background-color: #FFFFFF;
       }
     }
   }
@@ -496,7 +478,6 @@ ul#products {
       display: block;
 
       &.info {
-        height: 35px;
         margin-top: 5px;
         font-size: $product_list_name_font_size;
         color: $product_link_text_color;
@@ -566,7 +547,6 @@ ul#products {
 #product-images {
   #main-image {
     text-align: center;
-    border: $default_border;
     background-color: $product_background_color;
 
     img {
@@ -894,7 +874,7 @@ ul#products {
 
   table.stock-contents {
     thead {
-      background-color: lighten($body_text_color, 70);
+      background-color: $body_text_color;
 
       th {
         font-size: 11px;
@@ -985,10 +965,9 @@ div[data-hook="inside_cart_form"] {
 }
 
 .cart-subtotal, .cart-total {
-  background: #00ADEE;
 
   td h5 {
-    color: #fff;
+    color: #000000;
   }
 }
 

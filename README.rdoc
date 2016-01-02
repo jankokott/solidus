@@ -12,8 +12,4 @@ Overview:
 
 * PostgreSQL
 
-* Database initialization
-
-* How to run the test suite
-
 * No collaboration :)
